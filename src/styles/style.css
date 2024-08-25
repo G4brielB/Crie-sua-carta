@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'New Amsterdam', monospace;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.cabecalho {
+    background-color: #F3D7C2; 
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 5px 0px 5px 30px;
+
+    width: 200px;
+}
+
+.menu{
+    display: flex;
+}
+
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;   
+    display: flex;
+}
+
+.menu ul li a {
+    font-size: 1.3em;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 20px;
+    border-bottom: solid 0px #8BB6A3;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+
+.active{
+    border-bottom: solid 2px #8BB6A3 ;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 2.7em;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 20px;
+}
+
+.formulario input{
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border-bottom: solid 1px #17a7a8;
+    background-color: rgba(18, 47, 81, 0.1);
+    font-size: 1.3em;
+}
+
+.area-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.btn{
+    padding: 10px;
+    border: none;
+    background-color: #fe958f;
+    border-radius: 20px;
+    font-size: 1.4em;
+    width: 100px;
+    transition: 0.2s ease-in;
+}
+
+.btn:hover{
+    background-color: #17a7a8;
+    color: #fff;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+.display-card{
+    display: flex;
+    justify-content: center;
+    margin: 20px 20vw;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    background: linear-gradient(#f3d7c2 0%,  #fe958f 100%);
+    box-shadow: 
+        2px 5px 8px;
+    transition: 0.5s ease-in;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.imagem{
+    width: 90px;
+    margin: 20px;
+}
+.texto{
+    margin: 20px;
+}
+
+.descricao{
+
+    margin-top: 10px;
+
+}
+
+.texto-sobre{
+    font-size: 1.4em;
+    margin: 90px;
+    text-align: center;
+}
+
+.rodape{
+    position: fixed;
+    right: 41%;
+    left: 41%;
+    bottom: 20px;
+
+}
