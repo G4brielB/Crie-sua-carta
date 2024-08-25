@@ -13,8 +13,6 @@ comoUsar.forEach(link => {
 })
 
 
-//https://paletadecores.com/paleta/fe958f/f3d7c2/8bb6a3/17a7a8/122f51/
-
 const navActive = document.querySelectorAll('#navActive li')
 navActive.forEach( e => {
         e.addEventListener('click', function() {
@@ -25,6 +23,25 @@ navActive.forEach( e => {
         })
     }
 )
+
+const btnToggle = document.querySelector('#btnToggle')
+btnToggle.addEventListener('click', e => {
+    const menu = document.querySelector('#menu')
+    const bar1 = document.querySelector('#bar1')
+    const bar2 = document.querySelector('#bar2')
+
+    if(menu.style.display == 'flex'){
+        menu.style.display = 'none'
+        bar1.classList.remove('girar-esquerda')
+        bar2.classList.remove('girar-direita')
+    }else{
+        menu.style.display = 'flex'
+        bar1.classList.add('girar-esquerda')
+        bar2.classList.add('girar-direita')
+    }
+
+})
+
 
 //criar carta
 
@@ -40,19 +57,6 @@ function criarInformacoes(){
     }
 
     const section = document.querySelector('#displayCard')
-    /*const card = `<div class="card">
-            <div >
-                <img class="imagem" src=${infoCards.imagem} >
-            </div>
-
-            <div class="texto">
-                <h1>${infoCards.nome}</h1>
-
-                <p class="descricao">${infoCards.descricao}</p>
-
-            </div>
-        </div>`*/
-
 
     // Deus do céu, um dia eu vou conseguir aprimorar esse codigo!
 
@@ -97,3 +101,4 @@ enviar.onclick = butao => {
     descricaoPersonagem.value = padrao
     
 }
+

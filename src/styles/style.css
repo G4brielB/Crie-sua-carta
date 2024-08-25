@@ -24,12 +24,34 @@ a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    transition: 0.5s ease;
 }
 
 .logo {
     margin: 5px 0px 5px 30px;
 
     width: 200px;
+}
+
+.btn-esconder{
+    display: none;
+}
+
+.bar1{
+    background-color: #000;
+    padding: 2px 15px;
+    rotate: 35deg;
+    position: absolute;  
+    transition: 0.5s ease;
+}
+
+.bar2{
+    background-color: #000;
+    padding: 2px 15px;
+    rotate: 325deg;
+    margin-left: 21px;
+    transition: 0.5s ease;
 }
 
 .menu{
@@ -161,3 +183,45 @@ a:hover{
     bottom: 20px;
 
 }
+
+@media(max-width: 610px){
+    .menu{
+        display: none;
+        transition: 0.5s ease;
+    }
+    .btn-esconder{
+        display: flex;
+        background-color: #fe958f;
+        padding: 30px;
+        border-radius: 10px;
+        transition: 0.5s ease;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .girar-esquerda{
+        rotate: 320deg;
+        transition: 0.5s ease;
+    }
+
+    .girar-direita{
+        rotate: 40deg;
+        transition: 0.5s ease;
+    }
+    
+    .rodape{
+        position: fixed;
+        right: 21%;
+        left: 21%;
+        bottom: 20px;   
+    }
+
+    .texto-sobre{
+        font-size: 1.4em;
+        margin: 30px;
+        text-align: center;
+    }
+}
+
+
+/*https://paletadecores.com/paleta/fe958f/f3d7c2/8bb6a3/17a7a8/122f51/*/
